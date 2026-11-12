@@ -1,16 +1,17 @@
 import { defineConfig } from "vitepress";
 
 const repo = "https://github.com/mintopia/encore";
+const base = process.env.DOCS_BASE ?? "/";
 
 export default defineConfig({
   title: "Encore",
   description: "Run Spotify Soloist headless on a Raspberry Pi, with a web console, multi-room Snapcast and zero PipeWire wrangling.",
   lang: "en-GB",
-  base: process.env.DOCS_BASE ?? "/",
+  base,
   cleanUrls: true,
   lastUpdated: true,
   head: [
-    ["link", { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+    ["link", { rel: "icon", type: "image/svg+xml", href: `${base}favicon.svg` }],
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
     ["link", { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" }],
     ["link", { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" }],

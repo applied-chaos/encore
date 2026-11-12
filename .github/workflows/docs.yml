@@ -32,9 +32,12 @@ jobs:
           node-version: 24
           cache: npm
           cache-dependency-path: site/package-lock.json
+      - id: pages
+        uses: actions/configure-pages@v6
       - run: npm ci
       - run: npm run build
-      - uses: actions/configure-pages@v6
+        env:
+          DOCS_BASE: ${{ steps.pages.outputs.base_path }}/
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site/.vitepress/dist
