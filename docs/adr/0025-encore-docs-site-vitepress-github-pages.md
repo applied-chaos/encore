@@ -1,5 +1,7 @@
 # Public docs site is "Encore", built with VitePress on GitHub Pages
 
+> Hosting superseded by ADR-0032 (Cloudflare Pages).
+
 The project gets a public name, **Encore**, and a user-facing docs site. The site leads with
 setting up on a Raspberry Pi, and covers the Spotify integration, features, Snapcast,
 sending to an external Snapserver, and the advanced integrations (relay, Pusher/Reverb,
