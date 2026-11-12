@@ -6,10 +6,10 @@
   "author": "Jessica Smith <jess@mintopia.net>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mintopia/encore.git"
+    "url": "git+https://github.com/applied-chaos/encore.git"
   },
-  "homepage": "https://github.com/mintopia/encore#readme",
-  "bugs": "https://github.com/mintopia/encore/issues",
+  "homepage": "https://github.com/applied-chaos/encore#readme",
+  "bugs": "https://github.com/applied-chaos/encore/issues",
   "type": "module",
   "bin": {
     "encore": "dist/main.js"

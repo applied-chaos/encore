@@ -15,7 +15,7 @@ import { PhArrowUpRight } from "@phosphor-icons/vue";
       <div class="actions">
         <a class="btn pri" :href="withBase('/guide/raspberry-pi')">Get started</a>
         <a class="btn" :href="withBase('/guide/what-is-encore')">What is Encore?</a>
-        <a class="ext" href="https://github.com/mintopia/encore">
+        <a class="ext" href="https://github.com/applied-chaos/encore">
           GitHub <PhArrowUpRight :size="15" weight="fill" />
         </a>
       </div>

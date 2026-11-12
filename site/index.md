@@ -16,7 +16,7 @@ titleTemplate: Spotify Connect for your Raspberry Pi
 # docker-compose.yml
 services:
   encore:
-    image: ghcr.io/mintopia/encore:latest
+    image: ghcr.io/applied-chaos/encore:latest
     network_mode: host
     restart: unless-stopped
     cap_add:

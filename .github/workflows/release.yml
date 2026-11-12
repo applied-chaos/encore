@@ -98,20 +98,11 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      # Mirror to the original namespace; GITHUB_TOKEN can't write outside this repo's owner.
-      - if: github.repository != 'mintopia/encore'
-        uses: docker/login-action@8aa5831fb8d48d8f76594c7ddde61ae58019f550 # v4.8.0
-        with:
-          registry: ghcr.io
-          username: mintopia
-          password: ${{ secrets.MINTOPIA_GHCR_TOKEN }}
-
       - id: meta
         uses: docker/metadata-action@dc802804100637a589fabce1cb79ff13a1411302 # v6.2.0
         with:
           images: |
             ghcr.io/${{ github.repository }}
-            ${{ github.repository != 'mintopia/encore' && 'ghcr.io/mintopia/encore' || '' }}
           tags: |
             type=semver,pattern={{version}},value=${{ needs.release-please.outputs.version || inputs.tag }}
             type=semver,pattern={{major}}.{{minor}},value=${{ needs.release-please.outputs.version || inputs.tag }}
@@ -127,3 +118,13 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      # Needs this repo granted write under the mintopia/encore package's "Manage Actions access".
+      - name: Mirror to ghcr.io/mintopia/encore
+        continue-on-error: true
+        env:
+          TAGS: ${{ steps.meta.outputs.tags }}
+        run: |
+          for tag in $TAGS; do
+            docker buildx imagetools create -t "ghcr.io/mintopia/encore:${tag##*:}" "$tag"
+          done

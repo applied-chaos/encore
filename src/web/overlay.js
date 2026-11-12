@@ -46,7 +46,7 @@ export function currentIndex(lines, timeSec) {
 // limit failure returns null WITHOUT caching, so a blip never poisons a track as
 // permanently lyric-less. Bumping the prefix invalidates old-schema entries.
 const CACHE_PREFIX = "soloist-lyrics:v2:";
-const LRCLIB_CLIENT = "encore (https://github.com/mintopia/encore)";
+const LRCLIB_CLIENT = "encore (https://github.com/applied-chaos/encore)";
 
 function cacheGet(key) {
   try { const v = localStorage.getItem(CACHE_PREFIX + key); return v === null ? undefined : JSON.parse(v); }

@@ -57,4 +57,4 @@ Yes. AI tools (Claude, Codex) were used in writing Encore.
 
 ## I found a bug
 
-Please [open an issue](https://github.com/mintopia/encore/issues).
+Please [open an issue](https://github.com/applied-chaos/encore/issues).

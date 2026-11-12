@@ -45,7 +45,7 @@ example Raspotify or librespot); it describes what it does.
 - **Day to day:** the box runs headless. The web console (port 80 by default) is used for
   settings, Now Playing, lyrics styling and debugging.
 - **Public face:** the docs site at <https://pimusic.stream/> (VitePress, `site/`), with
-  the README on GitHub (`mintopia/encore`).
+  the README on GitHub (`applied-chaos/encore`).
 
 ## Capabilities and Constraints
 
@@ -63,8 +63,8 @@ example Raspotify or librespot); it describes what it does.
 
 ## Brand Commitments
 
-- Name: **Encore**. Repo `mintopia/encore`, npm `@mintopia/encore`, image
-  `ghcr.io/mintopia/encore`.
+- Name: **Encore**. Repo `applied-chaos/encore`, npm `@mintopia/encore`, image
+  `ghcr.io/applied-chaos/encore`.
 - Voice: UK English, plain and direct, practical, no hype.
 - Always state that Encore isn't affiliated with or endorsed by Spotify or Raspberry Pi Ltd.
 - Disclose that AI tools (Claude, Codex) were used to build it.

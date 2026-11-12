@@ -11,7 +11,7 @@ docker compose up -d
 Your settings (`./config`) and Spotify login (`soloist-data`) are kept.
 
 Images are tagged by version as well as `latest`, so you can pin one, for example
-`ghcr.io/mintopia/encore:2` for the 2.x series.
+`ghcr.io/applied-chaos/encore:2` for the 2.x series.
 
 ## Soloist itself
 

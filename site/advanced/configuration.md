@@ -25,5 +25,5 @@ creates it from the commented example on first start.
 | `overlay` | Lyrics overlay styling | [Lyrics](/features/lyrics) |
 
 The fully commented example is
-[`config.example.yaml`](https://github.com/mintopia/encore/blob/develop/config.example.yaml)
+[`config.example.yaml`](https://github.com/applied-chaos/encore/blob/develop/config.example.yaml)
 in the repository.

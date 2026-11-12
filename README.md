@@ -40,7 +40,7 @@ The easy path. No fighting with PipeWire, and you get Snapcast too. Use a `docke
 ```yml
 services:
   soloist:
-    image: ghcr.io/mintopia/encore:latest
+    image: ghcr.io/applied-chaos/encore:latest
     network_mode: host
     restart: unless-stopped
     cap_add:
