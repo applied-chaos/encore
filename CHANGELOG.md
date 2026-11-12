@@ -1,5 +1,17 @@
 # Changelog
 
+## [2.3.1](https://github.com/applied-chaos/encore/compare/v2.3.0...v2.3.1) (2026-11-12)
+
+
+### Bug Fixes
+
+* **ci:** mirror images to ghcr.io/mintopia/encore with personal PAT ([aa26ce9](https://github.com/applied-chaos/encore/commit/aa26ce97ee12a1694fb69da155f415315840eaea))
+* **ci:** mirror images to ghcr.io/mintopia/encore with personal PAT in its own docker config ([7f86254](https://github.com/applied-chaos/encore/commit/7f86254fe3b324a106a3fabaa5ac02a68d3136f4))
+* **ci:** push images with GITHUB_TOKEN, mirror to mintopia namespace best-effort ([6c98d70](https://github.com/applied-chaos/encore/commit/6c98d7096cd09fb773c50e192632e05319ea1a86))
+* **docs:** full-width footer divider, drop rule above disclaimer ([8a58169](https://github.com/applied-chaos/encore/commit/8a581693010e949d79df20a13e0b82fb6bdf820b))
+* publish from applied-chaos/encore ([a66977c](https://github.com/applied-chaos/encore/commit/a66977c64ee1ec29ede652b1701c02d1e7c9a6fc))
+* publish npm and images from applied-chaos/encore ([46d8a7c](https://github.com/applied-chaos/encore/commit/46d8a7c17e2ca9a6accfad5bcfd51707f429e4b5))
+
 ## [2.3.0](https://github.com/applied-chaos/encore/compare/v2.2.0...v2.3.0) (2026-11-12)
 
 
