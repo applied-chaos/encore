@@ -119,12 +119,15 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
 
-      # Needs this repo granted write under the mintopia/encore package's "Manage Actions access".
+      # Separate DOCKER_CONFIG: ghcr.io holds one credential per config, and the push above uses GITHUB_TOKEN.
       - name: Mirror to ghcr.io/mintopia/encore
-        continue-on-error: true
         env:
           TAGS: ${{ steps.meta.outputs.tags }}
+          TOKEN: ${{ secrets.MINTOPIA_GHCR_TOKEN }}
         run: |
+          [ -n "$TOKEN" ] || { echo "::error::MINTOPIA_GHCR_TOKEN is empty"; exit 1; }
+          export DOCKER_CONFIG="$RUNNER_TEMP/ghcr-mintopia"
+          echo "$TOKEN" | docker login ghcr.io -u mintopia --password-stdin
           for tag in $TAGS; do
             docker buildx imagetools create -t "ghcr.io/mintopia/encore:${tag##*:}" "$tag"
           done
