@@ -21,8 +21,8 @@ defineProps<{ title: string }>();
 </template>
 
 <style scoped>
-.wrap { min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; }
-.col { width: 100%; max-width: 400px; margin: auto; }
+.wrap { min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; padding-top: 40px; }
+.col { width: min(400px, 100% - 40px); margin: auto; padding-bottom: 40px; }
 .head { text-align: center; margin-bottom: 24px; }
 .mark {
   width: 48px; height: 48px; border-radius: 14px; display: inline-flex; align-items: center; justify-content: center;
