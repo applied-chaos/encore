@@ -64,7 +64,7 @@ a 64-bit OS, so they won't work. Every other Raspberry Pi is fine.
    ```yaml
    services:
      encore:
-       image: ghcr.io/mintopia/encore:latest
+       image: ghcr.io/applied-chaos/encore:latest
        network_mode: host
        restart: unless-stopped
        cap_add:

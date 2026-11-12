@@ -1,6 +1,6 @@
 import { defineConfig } from "vitepress";
 
-const repo = "https://github.com/mintopia/encore";
+const repo = "https://github.com/applied-chaos/encore";
 const base = process.env.DOCS_BASE ?? "/";
 
 export default defineConfig({

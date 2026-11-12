@@ -13,9 +13,9 @@ import markReversed from "../assets/ae-mark-small-reversed.svg";
       </a>
       <ul class="links">
         <li><a href="https://pimusic.stream" target="_blank" rel="noopener">Docs</a></li>
-        <li><a href="https://github.com/mintopia/encore" target="_blank" rel="noopener">Source</a></li>
-        <li><a href="https://github.com/mintopia/encore/issues" target="_blank" rel="noopener">Issues</a></li>
-        <li><a href="https://github.com/mintopia/encore/blob/develop/LICENSE" target="_blank" rel="noopener">MIT licence</a></li>
+        <li><a href="https://github.com/applied-chaos/encore" target="_blank" rel="noopener">Source</a></li>
+        <li><a href="https://github.com/applied-chaos/encore/issues" target="_blank" rel="noopener">Issues</a></li>
+        <li><a href="https://github.com/applied-chaos/encore/blob/develop/LICENSE" target="_blank" rel="noopener">MIT licence</a></li>
       </ul>
     </div>
   </footer>
