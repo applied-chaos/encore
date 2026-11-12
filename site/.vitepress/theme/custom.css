@@ -156,7 +156,6 @@ h1, h2, h3, .VPNavBarTitle .title {
 }
 .vp-doc a.sponsor-btn:hover { background: var(--ind-h); color: #fff; }
 .dark .vp-doc a.sponsor-btn, .dark .vp-doc a.sponsor-btn:hover { color: #04201d; }
-.VPFooter .message a { color: var(--link); text-underline-offset: 3px; }
 
 .compare td:first-child { font-weight: 600; white-space: nowrap; }
 .vp-doc table { font-variant-numeric: tabular-nums; }
@@ -170,3 +169,15 @@ input, textarea { caret-color: var(--ind); }
 ::-webkit-scrollbar { width: 10px; height: 10px; }
 ::-webkit-scrollbar-thumb { background: var(--line2); border-radius: 10px; border: 2px solid transparent; background-clip: padding-box; }
 ::-webkit-scrollbar-track { background: transparent; }
+
+.VPFooter .container { max-width: 1152px; text-align: left; }
+.VPFooter .message { font-size: 12px; text-align: center; color: var(--vp-c-text-3); }
+.VPFooter .copyright a { color: inherit; font-weight: 500; text-decoration: none; }
+.VPFooter .copyright a:hover { color: var(--vp-c-text-1); text-decoration: underline; }
+.VPFooter .ae-credit { display: flex; align-items: center; gap: 8px; margin-right: auto; }
+.VPFooter .ae-credit img { height: 24px; width: auto; }
+.VPFooter .ae-links { display: flex; flex-wrap: wrap; gap: 8px 16px; }
+.VPFooter .copyright { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--vp-c-divider); font-size: 14px; }
+.VPFooter .ae-mark-dark, .dark .VPFooter .ae-mark-light { display: none; }
+.dark .VPFooter .ae-mark-dark { display: block; }
+@media (max-width: 719px) { .VPFooter .copyright { flex-direction: column; align-items: flex-start; } }

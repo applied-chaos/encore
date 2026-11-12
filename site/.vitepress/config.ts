@@ -81,8 +81,8 @@ export default defineConfig({
     search: { provider: "local" },
     outline: { level: [2, 3] },
     footer: {
-      message: 'MIT licensed. Encore wraps Spotify Soloist and is not affiliated with or endorsed by Spotify or Raspberry Pi Ltd. <a href="https://github.com/sponsors/mintopia">Sponsor on GitHub</a>',
-      copyright: "© 2026 Jessica Smith",
+      message: "Encore wraps Spotify Soloist and is not affiliated with or endorsed by Spotify or Raspberry Pi Ltd.",
+      copyright: `<a class="ae-credit" href="https://appliedentropy.dev"><img class="ae-mark-light" src="${base}brand/ae-mark-small.svg" alt="" width="20" height="24"><img class="ae-mark-dark" src="${base}brand/ae-mark-small-reversed.svg" alt="" width="20" height="24">An Applied Entropy project</a><span class="ae-links"><a href="${repo}">Source</a><a href="${repo}/issues">Issues</a><a href="https://github.com/sponsors/mintopia">Sponsor</a><a href="${repo}/blob/develop/LICENSE">MIT licence</a></span>`,
     },
   },
 });
