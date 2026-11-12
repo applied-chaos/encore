@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.3.0](https://github.com/applied-chaos/encore/compare/v2.2.0...v2.3.0) (2026-11-12)
+
+
+### Features
+
+* Applied Entropy branding in console and docs footers ([9665642](https://github.com/applied-chaos/encore/commit/9665642c0c6a5bf587172ac7d375acc8f99e7f98))
+
 ## [2.2.0](https://github.com/mintopia/encore/compare/v2.1.1...v2.2.0) (2026-10-17)
 
 
